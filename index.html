@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="bablo"><a href="#" onclick="displayPhrase();">دوس هنا </a></h1>
+   
+    <p>كمان شوية</p>
+    <p>علشان خاطري</p>
+
+ 
+        <img src="hqdefault.jpg">
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script>
+        function displayPhrase()
+{
+    document.getElementById("bablo").innerHTML = 'انزل تحت';
+    myAudioFunction('A');
+    
+}
+
+$(window).scroll(function () {
+   if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
+    aAudio.play();
+   }
+});
+        var aAudio = new Audio('babloooo.mp3');
+        // let limitBottom = document.documentElement.offsetHeight - window.innerHeight;
+        // function myAudioFunction(letter) {
+        //     if(document.documentElement.scrollTop == limitBottom) {
+        //        
+        //         window.alert("dd");
+        //     } 
+        // }
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
